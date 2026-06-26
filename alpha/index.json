@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-26T21:24:03Z",
+  "artifacts": [
+    {
+      "version": "0.1.0-alpha.1",
+      "os": "linux",
+      "arch": "amd64",
+      "filename": "axon-agent_0.1.0-alpha.1_linux_amd64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/alpha/axon-agent_0.1.0-alpha.1_linux_amd64.tar.gz",
+      "sha256": "108b878697839860e150305121de2fa8668508c7f302a4208ea96be40322a098"
+    },
+    {
+      "version": "0.1.0-alpha.1",
+      "os": "linux",
+      "arch": "arm64",
+      "filename": "axon-agent_0.1.0-alpha.1_linux_arm64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/alpha/axon-agent_0.1.0-alpha.1_linux_arm64.tar.gz",
+      "sha256": "3bf8f0b3051d2ad5e0ea89caaa3f03312731382b7d60b34c9cad31795375a75b"
+    }
+  ]
+}
