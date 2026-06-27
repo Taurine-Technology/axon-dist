@@ -38,7 +38,11 @@ AXON_DOWNLOAD_BASE="${AXON_DOWNLOAD_BASE:-}"   # baked by controller or set by o
 AXON_AGENT_URL="${AXON_AGENT_URL:-}"           # full tarball URL override
 AXON_AGENT_SHA256="${AXON_AGENT_SHA256:-}"     # expected sha256 for a custom AXON_AGENT_URL (required for remote URLs without channel checksums)
 AXON_VERSION="${AXON_VERSION:-}"               # pin a version; else read <base>/<channel>/latest
-AXON_CHANNEL="${AXON_CHANNEL:-main}"           # release stream: alpha|beta|main (default main)
+# Release stream: alpha|beta|main (default main). AXON_RELEASE_CHANNEL is the
+# controller/UI-facing name (baked by the enrollment install-script endpoint and
+# emitted in the UI one-liner); AXON_CHANNEL is the legacy alias and wins if both
+# are set. The --channel flag (below) overrides either.
+AXON_CHANNEL="${AXON_CHANNEL:-${AXON_RELEASE_CHANNEL:-main}}"
 AXON_DEPLOYMENT_MODE="${AXON_DEPLOYMENT_MODE:-switching}"
 AXON_MONITOR_INTERFACE="${AXON_MONITOR_INTERFACE:-}"
 AXON_PRIMARY_INTERFACE="${AXON_PRIMARY_INTERFACE:-eth0}"
