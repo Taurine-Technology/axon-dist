@@ -1,0 +1,2 @@
+e20213e0558fc73fa91ef3bf4e32e757bc8b1e2502970ac7ba7ad97435d02851  axon-agent_0.1.0-beta.1_linux_amd64.tar.gz
+13337300ade543f35a0dd88008f8e597f127237cd2f5f3d83e56c11452bb4586  axon-agent_0.1.0-beta.1_linux_arm64.tar.gz
