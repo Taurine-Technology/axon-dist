@@ -20,3 +20,5 @@ ec4e82cd888a3025140b2961b38c5c0c60abb4a719f5d4cdeebe1381224caf10  axon-agent_0.4
 576b644c644143401e2cc36306f14874e0ae89a99c8c27e4a179d1516876ab8b  axon-agent_0.4.0-beta.6_linux_arm64.tar.gz
 7df6e6e571f6ec6407b37e28d8accf85ba322c9236f11630e321691e3ba5f57d  axon-agent_0.4.0-beta.7_linux_amd64.tar.gz
 35c8d7856d9b5eba49eb0d2309997143fd82a011537afcb94a86f54309a0a2e9  axon-agent_0.4.0-beta.7_linux_arm64.tar.gz
+582fd41e45b96ddad493e2430673ff011eddab32f9ee2eda353faabe91d11275  axon-agent_0.4.0-beta.8_linux_amd64.tar.gz
+b54ac56215a32a6d429aea88b3d239b04791f0cbb380c91b8908eeae66e7ffb5  axon-agent_0.4.0-beta.8_linux_arm64.tar.gz
