@@ -48,6 +48,12 @@ AXON_MONITOR_INTERFACE="${AXON_MONITOR_INTERFACE:-}"
 AXON_PRIMARY_INTERFACE="${AXON_PRIMARY_INTERFACE:-eth0}"
 AXON_SITE_ID="${AXON_SITE_ID:-}"
 AXON_DEVICE_ID="${AXON_DEVICE_ID:-}"
+# Smart Uplink activation tuple (agent#108). All-or-none; install.sh validates
+# the values, but the wrapper enforces the pairing up front so a partial tuple
+# fails before any download happens.
+AXON_QOS_PLATFORM_TIER="${AXON_QOS_PLATFORM_TIER:-}"
+AXON_QOS_MAX_RATE_KBIT="${AXON_QOS_MAX_RATE_KBIT:-}"
+AXON_QOS_MAX_MEMLIMIT_BYTES="${AXON_QOS_MAX_MEMLIMIT_BYTES:-}"
 
 # ── CLI flags ─────────────────────────────────────────────────────────────────
 # Usually invoked as `curl … | bash` (env-driven), but `--channel` may also be
@@ -56,6 +62,18 @@ while [ "$#" -gt 0 ]; do
     case "$1" in
         --channel)
             AXON_CHANNEL="${2:?missing channel}"
+            shift 2
+            ;;
+        --qos-tier)
+            AXON_QOS_PLATFORM_TIER="${2:?missing qos tier}"
+            shift 2
+            ;;
+        --qos-max-rate-kbit)
+            AXON_QOS_MAX_RATE_KBIT="${2:?missing qos max rate}"
+            shift 2
+            ;;
+        --qos-max-memlimit-bytes)
+            AXON_QOS_MAX_MEMLIMIT_BYTES="${2:?missing qos max memlimit}"
             shift 2
             ;;
         *)
@@ -70,6 +88,12 @@ case "$AXON_CHANNEL" in
     alpha|beta|main) ;;
     *) die "invalid channel '$AXON_CHANNEL' (expected one of: alpha, beta, main)" ;;
 esac
+
+if [ -n "$AXON_QOS_PLATFORM_TIER$AXON_QOS_MAX_RATE_KBIT$AXON_QOS_MAX_MEMLIMIT_BYTES" ]; then
+    if [ -z "$AXON_QOS_PLATFORM_TIER" ] || [ -z "$AXON_QOS_MAX_RATE_KBIT" ] || [ -z "$AXON_QOS_MAX_MEMLIMIT_BYTES" ]; then
+        die "--qos-tier, --qos-max-rate-kbit and --qos-max-memlimit-bytes are all-or-none: a partial tuple prevents agent startup"
+    fi
+fi
 
 command -v curl >/dev/null 2>&1 || die "curl is required"
 command -v tar  >/dev/null 2>&1 || die "tar is required"
@@ -180,6 +204,11 @@ if [ "$AXON_DEPLOYMENT_MODE" = "mirror" ]; then
     [ -n "$AXON_MONITOR_INTERFACE" ] && set -- "$@" --monitor-interface "$AXON_MONITOR_INTERFACE"
     [ -n "$AXON_SITE_ID" ]  && set -- "$@" --site-id "$AXON_SITE_ID"
     [ -n "$AXON_DEVICE_ID" ] && set -- "$@" --device-id "$AXON_DEVICE_ID"
+fi
+if [ -n "$AXON_QOS_PLATFORM_TIER" ]; then
+    set -- "$@" --qos-tier "$AXON_QOS_PLATFORM_TIER" \
+        --qos-max-rate-kbit "$AXON_QOS_MAX_RATE_KBIT" \
+        --qos-max-memlimit-bytes "$AXON_QOS_MAX_MEMLIMIT_BYTES"
 fi
 
 log "installing (deployment_mode=$AXON_DEPLOYMENT_MODE)"
