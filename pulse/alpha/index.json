@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-18T12:57:52.213254Z",
+  "artifacts": [
+    {
+      "version": "0.0.1",
+      "os": "darwin",
+      "arch": "amd64",
+      "kind": "desktop",
+      "filename": "axon-pulse_macos_universal.dmg",
+      "url": "axon-pulse_macos_universal.dmg",
+      "sha256": "29b58d5ee084a17a50f1d63ae9642f26072d3ad8ef6f9faf064aa3bc67d4a277",
+      "size_bytes": 18248067
+    },
+    {
+      "version": "0.0.1",
+      "os": "darwin",
+      "arch": "amd64",
+      "kind": "headless",
+      "filename": "axon-pulse_darwin_amd64",
+      "url": "axon-pulse_darwin_amd64",
+      "sha256": "87d31b6b73d2ae96b60f0774020e99f7db9664da23461233af4a82afb869e702",
+      "size_bytes": 18549312
+    },
+    {
+      "version": "0.0.1",
+      "os": "darwin",
+      "arch": "amd64",
+      "kind": "managed-package",
+      "filename": "axon-pulse_darwin_amd64_managed.tar.gz",
+      "url": "axon-pulse_darwin_amd64_managed.tar.gz",
+      "sha256": "b50c0e62a70fc93939c6a56dbc0287bda28c44a48313060cb5301628771b2509",
+      "size_bytes": 7432060
+    },
+    {
+      "version": "0.0.1",
+      "os": "darwin",
+      "arch": "arm64",
+      "kind": "desktop",
+      "filename": "axon-pulse_macos_universal.dmg",
+      "url": "axon-pulse_macos_universal.dmg",
+      "sha256": "29b58d5ee084a17a50f1d63ae9642f26072d3ad8ef6f9faf064aa3bc67d4a277",
+      "size_bytes": 18248067
+    },
+    {
+      "version": "0.0.1",
+      "os": "darwin",
+      "arch": "arm64",
+      "kind": "headless",
+      "filename": "axon-pulse_darwin_arm64",
+      "url": "axon-pulse_darwin_arm64",
+      "sha256": "7e5d6c5243b83983f953a9a5d47c73f9572576b9409e2a659b727e0cac786531",
+      "size_bytes": 17748098
+    },
+    {
+      "version": "0.0.1",
+      "os": "darwin",
+      "arch": "arm64",
+      "kind": "managed-package",
+      "filename": "axon-pulse_darwin_arm64_managed.tar.gz",
+      "url": "axon-pulse_darwin_arm64_managed.tar.gz",
+      "sha256": "101016a4ef585f5a7b13061e28df314d67a8f03ba120487d6a766ff623d0b981",
+      "size_bytes": 6780407
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "amd64",
+      "kind": "desktop-raw",
+      "filename": "axon-pulse-desktop_0.0.1_linux_amd64.deb",
+      "url": "axon-pulse-desktop_0.0.1_linux_amd64.deb",
+      "sha256": "f85a4ca2d77f39b98bc10cc0b2f1c28a8a6bb32af521418cb69300f0933a09e4",
+      "size_bytes": 7225184
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "amd64",
+      "kind": "desktop",
+      "filename": "axon-pulse_linux_amd64.AppImage",
+      "url": "axon-pulse_linux_amd64.AppImage",
+      "sha256": "898d53ac3a22553e0f4f46b6803bd3618c632e6e0f5eb819fb6a2453dc3653f3",
+      "size_bytes": 8890872
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "amd64",
+      "kind": "headless-package",
+      "filename": "axon-pulse_0.0.1_linux_amd64.deb",
+      "url": "axon-pulse_0.0.1_linux_amd64.deb",
+      "sha256": "f2d000cc54d09eeeb4bd84b2c690c71f689267328957a4058c1033c5a0c5aea1",
+      "size_bytes": 6024956
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "amd64",
+      "kind": "headless-package",
+      "filename": "axon-pulse_0.0.1_linux_amd64.tar.gz",
+      "url": "axon-pulse_0.0.1_linux_amd64.tar.gz",
+      "sha256": "e8fbdcb4015cc49a1d7b04b58d59d653543b761d81dba561da6f85a890e26eca",
+      "size_bytes": 7238977
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "amd64",
+      "kind": "headless",
+      "filename": "axon-pulse_linux_amd64",
+      "url": "axon-pulse_linux_amd64",
+      "sha256": "65155f167d77a46954211cbee58b6968b37cd29715c924416a1ce208a2c31bd4",
+      "size_bytes": 18325666
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "arm64",
+      "kind": "desktop-raw",
+      "filename": "axon-pulse-desktop_0.0.1_linux_arm64.deb",
+      "url": "axon-pulse-desktop_0.0.1_linux_arm64.deb",
+      "sha256": "3f76339c2571676496d1121e268f2f76e41b17ba73c92818d2f2643e2c67ad7d",
+      "size_bytes": 6599836
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "arm64",
+      "kind": "desktop",
+      "filename": "axon-pulse_linux_arm64.AppImage",
+      "url": "axon-pulse_linux_arm64.AppImage",
+      "sha256": "a94f2ce262f7e1d86d81555fe28ebf0a6d6f4f8ac574ada38979f39a947a21b6",
+      "size_bytes": 8239624
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "arm64",
+      "kind": "headless-package",
+      "filename": "axon-pulse_0.0.1_linux_arm64.deb",
+      "url": "axon-pulse_0.0.1_linux_arm64.deb",
+      "sha256": "e4d2af1d8b1785beb9ea9c8635ab3c9a12f97167a8568859c31748957605317f",
+      "size_bytes": 5498030
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "arm64",
+      "kind": "headless-package",
+      "filename": "axon-pulse_0.0.1_linux_arm64.tar.gz",
+      "url": "axon-pulse_0.0.1_linux_arm64.tar.gz",
+      "sha256": "e6f173661fae400c44d49e43b0971ac4fefc6f5eeaa259e1ed7c64381b9ae94e",
+      "size_bytes": 6682673
+    },
+    {
+      "version": "0.0.1",
+      "os": "linux",
+      "arch": "arm64",
+      "kind": "headless",
+      "filename": "axon-pulse_linux_arm64",
+      "url": "axon-pulse_linux_arm64",
+      "sha256": "69341c309b31650080eef947fcbeb9890493df734a7fa21a26ecb243c33101c8",
+      "size_bytes": 17432738
+    }
+  ]
+}
