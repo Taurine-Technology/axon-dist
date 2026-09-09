@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulse downloads — current releases and legacy archive</title>
+  <style>
+    :root { color-scheme: light dark; font: 18px/1.6 system-ui, sans-serif; }
+    body { max-width: 48rem; padding: 2rem 1.25rem; margin: auto; }
+    h1, h2 { line-height: 1.2; }
+    a { text-underline-offset: .18em; }
+    pre { padding: 1rem; overflow-x: auto; background: light-dark(#f0f2f4, #24282c); }
+    code { font-size: .9em; overflow-wrap: anywhere; }
+    .notice { border-inline-start: .3rem solid #b07700; padding-inline-start: 1rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Pulse downloads</h1>
+  <p class="notice"><strong>This GitHub Pages site contains legacy Pulse artifacts.</strong>
+  Historical downloads and signatures remain available at their existing URLs.
+  Use the current distribution service for new installations.</p>
+
+  <h2>Current releases</h2>
+  <p>Pulse release CI publishes packages and release indexes to
+  <code>https://dist.taurinetech.com/pulse/&lt;channel&gt;/</code>.
+  Use <strong>main</strong> for stable releases. Alpha and Beta are explicit
+  preview choices.</p>
+  <ul>
+    <li><a href="https://dist.taurinetech.com/pulse/main/index.json">Main release index</a></li>
+    <li><a href="https://dist.taurinetech.com/pulse/beta/index.json">Beta release index</a></li>
+    <li><a href="https://dist.taurinetech.com/pulse/alpha/index.json">Alpha release index</a></li>
+  </ul>
+
+  <h2>Ubuntu and Debian: APT rollout</h2>
+  <p class="notice"><strong>APT is pending publication.</strong> The bootstrap
+  returned HTTP 404 on 9 September 2026. Configuring signing secrets or merging
+  documentation does not publish packages. Confirm the bootstrap and signed
+  metadata for your channel are available before using the commands below.</p>
+  <p>The planned repository base is
+  <code>https://dist.taurinetech.com/pulse/apt</code>, with bootstrap
+  <code>install-apt.sh</code>. The default channel is <code>main</code>.
+  Desktop packages target Ubuntu 24.04 LTS or compatible newer systems on
+  amd64 and arm64. Debian desktop compatibility requires verifying the available
+  GTK 4 and WebKitGTK 6 packages and their ABI versions; it is not yet validated.
+  The headless package has no GUI dependencies.
+  After a verified release publishes these files:</p>
+  <pre><code>curl -fL https://dist.taurinetech.com/pulse/apt/install-apt.sh -o install-apt.sh
+# Inspect the script before running it.
+sh install-apt.sh --channel main --package desktop</code></pre>
+  <p>Desktop installs use <code>axon-pulse-desktop</code>. Headless servers use
+  <code>--package headless</code> to install <code>axon-pulse</code>; use the
+  controller's claim page or sensor UI to obtain the enrollment command, for
+  Ubuntu/Debian. It uses this APT bootstrap and passes the claim token through
+  standard input. Other Linux systems require the portable/manual installer.
+  Keep enrollment tokens out of public download URLs.</p>
+  <p>For a preview, explicitly select <code>--channel alpha</code> or
+  <code>--channel beta</code>. Optional automatic installation uses
+  <code>--enable-auto-updates</code> and is supported only on <code>main</code>.
+  Without that opt-in, apply updates with Ubuntu's package tools:</p>
+  <pre><code>sudo apt update
+sudo apt install --only-upgrade axon-pulse-desktop
+# For a headless installation, use axon-pulse instead.</code></pre>
+  <p>Downloading a <code>.deb</code> alone does not configure a repository for
+  future updates. The bootstrap establishes that package source. APT publication
+  belongs to axon-pulse's static distribution pipeline; this archive does not
+  publish a separate repository.</p>
+
+  <h2>Portable AppImage alternative</h2>
+  <p>AppImage remains available for Linux users who prefer a portable desktop
+  application. Select the AppImage matching your architecture from the current
+  channel's release index, save it in a permanent location, make it executable,
+  and run it. For example:</p>
+  <pre><code>chmod +x ~/Applications/axon-pulse_linux_amd64.AppImage
+~/Applications/axon-pulse_linux_amd64.AppImage</code></pre>
+  <p>Keep the file writable by your user for its built-in updater. AppImage is
+  separate from APT package management; desktop menu and browser claim-link
+  integration may require additional setup. See the
+  <a href="https://docs.appimage.org/user-guide/run-appimages.html">AppImage guide</a>.
+  For Ubuntu/Debian managed installations, prefer the APT route once published.</p>
+
+  <p><a href="../simple/">Python wheel index</a></p>
+</main>
+</body>
+</html>

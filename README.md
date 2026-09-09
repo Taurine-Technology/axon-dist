@@ -19,6 +19,25 @@ pip install \
 The `--extra-index-url` keeps transitive public deps (grpcio, protobuf,
 nfstream, …) resolving from real PyPI — we do not mirror PyPI here.
 
+## Pulse downloads
+
+**Pulse artifacts under this repository's `pulse/` directory are legacy.**
+They are retained for historical links and signature verification. Current
+Pulse releases are published by axon-pulse to
+[dist.taurinetech.com](https://dist.taurinetech.com/pulse/main/index.json), not
+by this repository's Pages workflow.
+
+See the [Pulse download guide](https://taurine-technology.github.io/axon-dist/pulse/)
+for current channels, Ubuntu/Debian APT rollout status, and portable downloads.
+Installing a downloaded `.deb` alone does not register an APT repository or
+subscribe that machine to future releases. The signed APT repository is being
+introduced by axon-pulse; its bootstrap returned HTTP 404 when checked on
+**9 September 2026**, so do not treat it as available until release CI publishes
+it and the signed channel has been verified.
+
+This documentation does not change the Python wheel index, Pages publishing,
+or any existing Pulse binary, signature, or historical index.
+
 ## Publishing
 
 Release workflows in each source repo build a wheel on `v*.*.*` tag push,
