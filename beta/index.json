@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-17T13:50:02Z",
+  "generated_at": "2026-10-19T16:13:27Z",
   "artifacts": [
     {
       "version": "0.6.3-beta.10",
@@ -19,20 +19,20 @@
       "sha256": "2072ff939a6ab088b52574f9f5c14e33c3db836895dff81278c0c124f1e5a5b8"
     },
     {
-      "version": "0.6.3-beta.6",
+      "version": "0.6.3-beta.11",
       "os": "linux",
       "arch": "amd64",
-      "filename": "axon-agent_0.6.3-beta.6_linux_amd64.tar.gz",
-      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.3-beta.6_linux_amd64.tar.gz",
-      "sha256": "8c23f8d6a81565c1a9adf4a044309842928e29317e229c64def20aa19ea48e1e"
+      "filename": "axon-agent_0.6.3-beta.11_linux_amd64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.3-beta.11_linux_amd64.tar.gz",
+      "sha256": "804186d8322a527580459f0a1ab5f0caa52418775de10f24e4881ea69078032b"
     },
     {
-      "version": "0.6.3-beta.6",
+      "version": "0.6.3-beta.11",
       "os": "linux",
       "arch": "arm64",
-      "filename": "axon-agent_0.6.3-beta.6_linux_arm64.tar.gz",
-      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.3-beta.6_linux_arm64.tar.gz",
-      "sha256": "5b8e138a7ddbb74aca7936725b8e1ac814a240c8c288a351652d51e946dd8947"
+      "filename": "axon-agent_0.6.3-beta.11_linux_arm64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.3-beta.11_linux_arm64.tar.gz",
+      "sha256": "ad2e54b03a5025dfcc9b4bdffc02a003ca0ae1713ab4d1c573e2fccfeb7ca6bc"
     },
     {
       "version": "0.6.3-beta.7",
