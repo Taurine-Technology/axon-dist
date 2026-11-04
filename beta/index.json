@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T19:53:17Z",
+  "generated_at": "2026-11-04T07:04:07Z",
   "artifacts": [
     {
       "version": "0.6.3-beta.10",
@@ -51,22 +51,6 @@
       "sha256": "d968b4e31e71991b05f46161c26e52803482c2dd95c5937502971fbc56463ed2"
     },
     {
-      "version": "0.6.3-beta.8",
-      "os": "linux",
-      "arch": "amd64",
-      "filename": "axon-agent_0.6.3-beta.8_linux_amd64.tar.gz",
-      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.3-beta.8_linux_amd64.tar.gz",
-      "sha256": "d54bf10bfafbffd84d37c8924e0a6ba0b1945a2983c9b90f9788be3927ec835f"
-    },
-    {
-      "version": "0.6.3-beta.8",
-      "os": "linux",
-      "arch": "arm64",
-      "filename": "axon-agent_0.6.3-beta.8_linux_arm64.tar.gz",
-      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.3-beta.8_linux_arm64.tar.gz",
-      "sha256": "b88b22591d762e7bb1a0cdfdb4deaa5b9ca7530a138fe2e7afe6a221c3e7198d"
-    },
-    {
       "version": "0.6.3-beta.9",
       "os": "linux",
       "arch": "amd64",
@@ -81,6 +65,22 @@
       "filename": "axon-agent_0.6.3-beta.9_linux_arm64.tar.gz",
       "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.3-beta.9_linux_arm64.tar.gz",
       "sha256": "435ac74bc69bcc99f066c03b08b53951d61b3006e0f52aeeba9791ae40652f5d"
+    },
+    {
+      "version": "0.6.4-beta.1",
+      "os": "linux",
+      "arch": "amd64",
+      "filename": "axon-agent_0.6.4-beta.1_linux_amd64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.4-beta.1_linux_amd64.tar.gz",
+      "sha256": "fbef2decc3a9a275e57c506d42c51fa44e2885eb31b0abfa416abc82fdb94b2f"
+    },
+    {
+      "version": "0.6.4-beta.1",
+      "os": "linux",
+      "arch": "arm64",
+      "filename": "axon-agent_0.6.4-beta.1_linux_arm64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/beta/axon-agent_0.6.4-beta.1_linux_arm64.tar.gz",
+      "sha256": "1708e4de60f84a5fd75ffe7d847247cba6937e8c5279dd7da907fcc8992ccbe1"
     }
   ]
 }

@@ -4,7 +4,7 @@ a05fe9e82418cf495a91c647913cbab013027dfd919f963f698455c75f7ff324  axon-agent_0.6
 ad2e54b03a5025dfcc9b4bdffc02a003ca0ae1713ab4d1c573e2fccfeb7ca6bc  axon-agent_0.6.3-beta.11_linux_arm64.tar.gz
 d0c25e75c14a74bd147ad350fd4e7e8b11449ba492bd7d0839b724bec7506c57  axon-agent_0.6.3-beta.12_linux_amd64.tar.gz
 d968b4e31e71991b05f46161c26e52803482c2dd95c5937502971fbc56463ed2  axon-agent_0.6.3-beta.12_linux_arm64.tar.gz
-d54bf10bfafbffd84d37c8924e0a6ba0b1945a2983c9b90f9788be3927ec835f  axon-agent_0.6.3-beta.8_linux_amd64.tar.gz
-b88b22591d762e7bb1a0cdfdb4deaa5b9ca7530a138fe2e7afe6a221c3e7198d  axon-agent_0.6.3-beta.8_linux_arm64.tar.gz
 b5c0a1a01b885acf96fad9c3843fe43c77b600171bf11845a9c8649d3e2dcdd6  axon-agent_0.6.3-beta.9_linux_amd64.tar.gz
 435ac74bc69bcc99f066c03b08b53951d61b3006e0f52aeeba9791ae40652f5d  axon-agent_0.6.3-beta.9_linux_arm64.tar.gz
+fbef2decc3a9a275e57c506d42c51fa44e2885eb31b0abfa416abc82fdb94b2f  axon-agent_0.6.4-beta.1_linux_amd64.tar.gz
+1708e4de60f84a5fd75ffe7d847247cba6937e8c5279dd7da907fcc8992ccbe1  axon-agent_0.6.4-beta.1_linux_arm64.tar.gz
