@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T19:59:52Z",
+  "generated_at": "2026-11-25T12:10:51Z",
   "artifacts": [
     {
       "version": "0.6.5-next.1",
@@ -33,6 +33,22 @@
       "filename": "axon-agent_0.6.5-next.2_linux_arm64.tar.gz",
       "url": "https://taurine-technology.github.io/axon-dist/next/alpha/axon-agent_0.6.5-next.2_linux_arm64.tar.gz",
       "sha256": "00e8b8e4ce78ea0a80cbe1544ddc43b6830061459998405b5387dc401f5b71eb"
+    },
+    {
+      "version": "0.6.5-next.sohail.1",
+      "os": "linux",
+      "arch": "amd64",
+      "filename": "axon-agent_0.6.5-next.sohail.1_linux_amd64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/next/alpha/axon-agent_0.6.5-next.sohail.1_linux_amd64.tar.gz",
+      "sha256": "6ac2ec7e64f9ef4e31e680fe25aae0734ccaa4cb5cff616cc74d0fa6e11aad13"
+    },
+    {
+      "version": "0.6.5-next.sohail.1",
+      "os": "linux",
+      "arch": "arm64",
+      "filename": "axon-agent_0.6.5-next.sohail.1_linux_arm64.tar.gz",
+      "url": "https://taurine-technology.github.io/axon-dist/next/alpha/axon-agent_0.6.5-next.sohail.1_linux_arm64.tar.gz",
+      "sha256": "60e7847ca89109e6023234f41161cf8c630e5187600e2946a3223d3829f63832"
     }
   ]
 }
